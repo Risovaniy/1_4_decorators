@@ -14,13 +14,3 @@ def foo_logs(total_foo):
             json.dump(logs, f, indent=2)
         return run_foo
     return log_foo
-
-
-@foo_logs
-def test_foo(arg, kwarg='some'):
-
-    print(f"Test {arg}, {kwarg}")
-    return kwarg
-
-
-test_foo("arg")
